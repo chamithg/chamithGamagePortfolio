@@ -1,0 +1,113 @@
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: rgb(0, 128, 128);
+  --clr-primary-2: rgb(0, 139, 139);
+  --clr-primary-3: rgb(95, 158, 160);
+  --clr-primary-4: rgb(32, 178, 170);
+  --clr-primary-5: rgb(0, 206, 209);
+  /* primary/main color */
+
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(244, 100%, 14%);
+  --clr-grey-2: hsl(211, 98%, 19%);
+  --clr-grey-3: hsl(209, 100%, 24%);
+  --clr-grey-4: hsl(209, 100%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(209, 98%, 82%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --ff-primary: "Lato", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.18rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.project {
+  background: url(../assets/background.jpg);
+}
+
+.project-main {
+  text-align: center;
+  margin-top: 2rem;
+}
+h1 {
+  color: var(--clr-primary-5);
+}
+h3 {
+  color: var(--clr-grey-6);
+}
+.project-btn-container {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-body {
+  width: 70vw;
+}
+.card {
+  background-color: var(--clr-grey-9);
+  min-height: 250px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  transition: var(--transition);
+  box-shadow: 2px 2px 10px var(--clr-primary-5);
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 2px var(--clr-grey-4);
+}
+.project1 {
+  background: url(./../assets/project1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 792px) {
+  .card {
+    margin: 0.5rem;
+  }
+  .project-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    grid-template-areas:
+      "a a b"
+      "e d d"
+      "e f g";
+  }
+  .project1 {
+    grid-area: a;
+  }
+  .project2 {
+    grid-area: b;
+  }
+
+  .project3 {
+    grid-area: d;
+  }
+  .project4 {
+    grid-area: e;
+  }
+  .project5 {
+    grid-area: f;
+  }
+  .project6 {
+    grid-area: g;
+  }
+}
+@media screen and (min-width: 992px) {
+  .card {
+    margin: 1rem;
+    min-height: 300px;
+  }
+}

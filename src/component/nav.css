@@ -1,0 +1,128 @@
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: rgb(0, 128, 128);
+  --clr-primary-2: rgb(0, 139, 139);
+  --clr-primary-3: rgb(95, 158, 160);
+  --clr-primary-4: rgb(32, 178, 170);
+  --clr-primary-5: rgb(0, 206, 209);
+  /* primary/main color */
+
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(244, 100%, 14%);
+  --clr-grey-2: hsl(211, 98%, 19%);
+  --clr-grey-3: hsl(209, 100%, 24%);
+  --clr-grey-4: hsl(209, 100%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(209, 98%, 82%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --ff-primary: "Lato", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.18rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+li {
+  color: var(--clr-grey-7);
+}
+h1 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 1rem;
+  color: var(--clr-primary-4);
+}
+.nav {
+  background: linear-gradient(var(--clr-grey-1), var(--clr-grey-2));
+  padding: 1rem 3rem;
+}
+span {
+  color: var(--clr-primary-5);
+}
+
+.nav-links ul {
+  transition: var(--transition);
+}
+.nav-links li {
+  transition: var(--transition);
+}
+.nav-links li:hover {
+  transform: scale(1.2);
+}
+h4:hover {
+  transition: var(--transition);
+  color: var(--clr-grey-8);
+}
+.nav-span {
+  color: var(--clr-grey-5);
+}
+.nav-toggle {
+  color: var(--clr-primary-5);
+  font-size: 2rem;
+  transition: var(--transition);
+}
+.nav-toggle:hover {
+  font-size: 3rem;
+}
+.nav-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: fixed;
+  z-index: 100;
+  margin-left: 0px;
+  height: 120vh;
+  width: 40vw;
+  top: -85px;
+  right: 0px;
+  padding-top: 8rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: rgb(0, 0, 0, 0.9);
+  transition: all 0.3s linear;
+}
+.nav-close {
+  display: none;
+}
+.btn-close {
+  font-size: 2rem;
+  text-align: end;
+  margin-bottom: 2rem;
+  color: var(--clr-primary-1);
+  top: -5px;
+}
+.btn-close:hover {
+  transform: scale(1.02);
+  color: red;
+}
+.btn-close-hidden {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .nav-links ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
