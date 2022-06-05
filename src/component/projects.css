@@ -51,6 +51,7 @@ h3 {
 
 .project-body {
   width: 70vw;
+  padding-bottom: 2rem;
 }
 .card {
   background-color: var(--clr-grey-9);

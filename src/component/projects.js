@@ -5,7 +5,7 @@ import "./projects.css";
 function Projects() {
   return (
     <div className="project" id="projects">
-      <div className="section-center">
+      <div className="section-center ">
         <div className="project-main">
           <div className="project-title">
             <h1>Projects</h1>

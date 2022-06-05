@@ -1,0 +1,83 @@
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: rgb(0, 128, 128);
+  --clr-primary-2: rgb(0, 139, 139);
+  --clr-primary-3: rgb(95, 158, 160);
+  --clr-primary-4: rgb(32, 178, 170);
+  --clr-primary-5: rgb(0, 206, 209);
+  --clr-primary-6: rgb(98, 164, 172);
+  /* primary/main color */
+
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(244, 100%, 14%);
+  --clr-grey-2: hsl(211, 98%, 19%);
+  --clr-grey-3: hsl(209, 100%, 24%);
+  --clr-grey-4: hsl(209, 100%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(209, 98%, 82%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: #dae2ec;
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --ff-primary: "Lato", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.18rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer,
+.contact-details,
+.contact-form,
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.footer-main {
+  /* background: linear-gradient(
+    azure,
+    azure,
+    azure,
+    var(--clr-primary-2),
+    var(--clr-grey-3),
+    var(--clr-grey-1)
+  ); */
+  background-color: var(--clr-grey-2);
+  background-size: cover;
+  background-position: left;
+  padding: 3rem;
+}
+
+.form {
+  gap: 1rem;
+  align-items: flex-start;
+}
+.form input,
+.form textarea {
+  width: 30vw;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 1.2 rem;
+}
+
+.contact-form {
+  background: rgb(128, 128, 128, 0.15);
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-details {
+    width: 35vw;
+  }
+  .footer {
+    flex-direction: row;
+    width: 90vw;
+  }
+}
