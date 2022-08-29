@@ -215,7 +215,8 @@ div::-webkit-scrollbar {
   background-color: var(--clr-grey-1);
   width: 90vw;
   margin: 5vw;
-  height: fit-content;
+  height: 80vh;
+  overflow: scroll;
   position: fixed;
   top: 5rem;
   bottom: 10rem;
