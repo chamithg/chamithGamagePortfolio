@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { ImLocation } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
-import "./../App.css";
 import "./footer.css";
 import emailjs from "@emailjs/browser";
 
@@ -31,7 +30,7 @@ function Footer() {
   };
 
   return (
-    <div className="footer-main" id="contact">
+    <div className="footer-main " id="contact">
       <div className="section-center footer">
         <div className="contact-details">
           <h4>
@@ -49,7 +48,7 @@ function Footer() {
           </h4>
         </div>
         <div className="contact-form">
-          <h3>Contact Us</h3>
+          <h3>Contact Me</h3>
           <form className="form" ref={form} onSubmit={sendEmail}>
             <input
               placeholder="Name"
