@@ -43,6 +43,9 @@
   padding-top: 2rem;
   padding-bottom: 5rem;
 }
+.about-image {
+  min-width: 20rem;
+}
 
 .underline {
   width: 220px;
@@ -63,6 +66,10 @@
 .about-info p {
   padding: 2rem;
   color: var(--clr-grey-2);
+}
+
+.p-lg {
+  font-size: 1.3rem;
 }
 
 @media screen and (max-width: 792px) {

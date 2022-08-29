@@ -76,8 +76,12 @@ function Resume() {
                 </h3>
                 <br />
                 <h4>
-                  <span> ➣ </span>Fullstack Coding Bootcamp Graduate :{" "}
-                  <span>3 X Black belts</span>
+                  <span> ➣ </span>Fullstack Coding Bootcamp Graduate : <br />
+                  <br />
+                  <span>
+                    Immersive Full-Stack Training Program in Python, Java, and
+                    MERN{" "}
+                  </span>
                 </h4>
                 <p>Coding Dojo | Online-Fulltime| May 2022 - Aug 2022</p>
 
@@ -123,27 +127,19 @@ function Resume() {
                 </h3>
                 <br />
                 <h4>
-                  <span> ➣ </span>CSS
+                  <span> ➣ </span>HTML5, CSS ,JavaScript(ES6, Node.js)
                 </h4>
                 <p>-------------</p>
-                <h4>
-                  <span> ➣ </span>Java Script
-                </h4>
-                <p>------------</p>
-                <h4>
-                  <span> ➣ </span>React
-                </h4>
-                <p>------------</p>
-                <h4>
-                  <span> ➣ </span>Python
-                </h4>
-                <p>------------</p>
                 <h4>
                   <span> ➣ </span>MERN
                 </h4>
                 <p>------------</p>
                 <h4>
-                  <span> ➣ </span>Java
+                  <span> ➣ </span>Python / Flask
+                </h4>
+                <p>------------</p>
+                <h4>
+                  <span> ➣ </span>Java / Spring boot
                 </h4>
                 <p>------------</p>
                 <br />

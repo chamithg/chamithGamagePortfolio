@@ -68,6 +68,9 @@ h4:hover {
   color: var(--clr-primary-5);
   font-size: 2rem;
   transition: var(--transition);
+  position: fixed;
+  right: 25px;
+  z-index: 101;
 }
 .nav-toggle:hover {
   font-size: 3rem;
@@ -123,6 +126,19 @@ h4:hover {
     gap: 20px;
   }
   .nav-toggle {
+    display: none;
+  }
+
+  .back-to-top {
+    font-size: 4rem;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 101;
+    transition: var(--transition);
+  }
+
+  .back-to-top-hidden {
     display: none;
   }
 }

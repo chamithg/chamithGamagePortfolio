@@ -1,13 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import { ImLocation } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
 import "./../App.css";
 import "./footer.css";
+import emailjs from "@emailjs/browser";
 
 function Footer() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_bpynchs",
+        "template_n56vwiw",
+        form.current,
+        "phhftrPoAAHP66zeJ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("msg sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-    <div className="footer-main">
+    <div className="footer-main" id="contact">
       <div className="section-center footer">
         <div className="contact-details">
           <h4>
@@ -26,29 +50,33 @@ function Footer() {
         </div>
         <div className="contact-form">
           <h3>Contact Us</h3>
-          <div className="form">
+          <form className="form" ref={form} onSubmit={sendEmail}>
             <input
+              placeholder="Name"
               className="form-control"
               type="text"
-              name="name"
-              placeholder="Name"
+              name="user_name"
             />
+
             <input
+              placeholder="email"
               className="form-control"
               type="email"
-              name="email"
-              placeholder="Email"
+              name="user_email"
             />
 
             <textarea
+              placeholder="Message"
               className="form-control"
               name="message"
               id="messge"
               cols="30"
               rows="10"
-              placeholder="Message"></textarea>
-            <button type="submit"> Send</button>
-          </div>
+            />
+            <button className="btn" type="submit" value="Send">
+              Send Email
+            </button>
+          </form>
         </div>
       </div>
     </div>

@@ -21,16 +21,18 @@ function About() {
             <img src={about} alt="about" />
           </div>
           <div className="about-info">
-            <p>
+            <p className="p-lg">
               Self-taught as well as Coding dojo bootcamp grad Front end / Full
               stack Developer with in-depth knowledge of Html,CSS, JavaScript,
-              MERN and python. Skilled in utilizing extemal Al's, developing,
-              optimizing, and reworking systems to meet specific customer
-              requirements. Looking forward to start first career as a developer
-              to put my skills to action.
+              MERN, Python/ Flask and Java/Spring boot. Skilled in utilizing
+              extemal API's, as well as building back ends utilizing Sql or
+              Mongo as database. Looking forward to start first career as a
+              developer to put my skills to action.
             </p>
             <div className="button-conatainer">
-              <div className="btn">Resume</div>
+              <a href="https://docs.google.com/document/d/1xQI95qJ41pudTeU4tWRMWi_Hv0LLHcKDHh-X4fTIPHc/edit?usp=sharing">
+                <div className="btn">Resume</div>
+              </a>
             </div>
           </div>
         </div>

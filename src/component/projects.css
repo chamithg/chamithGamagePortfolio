@@ -27,6 +27,15 @@
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
+
+a {
+  color: antiquewhite;
+}
+
+a:hover {
+  color: var(--clr-primary-1);
+}
+
 .project {
   background: url(../assets/background.jpg);
 }
@@ -61,6 +70,53 @@ h3 {
   transition: var(--transition);
   box-shadow: 2px 2px 10px var(--clr-primary-5);
 }
+
+div::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+.proj-info {
+  max-height: 150px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.projInfo {
+  background-color: var(--clr-grey-9);
+  min-height: 250px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  transition: var(--transition);
+}
+.card:hover {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.projInfo {
+  padding: 1.5rem;
+  opacity: 0;
+}
+.project ul {
+  list-style: circle;
+  margin: 1.5rem;
+}
+
+.projInfo li {
+  color: var(--clr-grey-8);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: var(--dark-shadow);
+  text-align: left;
+}
+
+.projInfo h3 {
+  font-size: 1.8rem;
+}
+
+.projInfo:hover {
+  opacity: 100%;
+}
 .card:hover {
   transform: scale(1.05);
   box-shadow: 2px 2px 2px var(--clr-grey-4);
@@ -70,21 +126,44 @@ h3 {
   background-size: cover;
   background-position: center;
 }
+.project2 {
+  background: url(./../assets/project2.png);
+  background-size: cover;
+  background-position: top left;
+}
+
+.project3 {
+  background: url(./../assets/project3.png);
+  background-size: cover;
+  background-position: top left;
+}
+
+.project4 {
+  background: url(./../assets/project4.png);
+  background-size: cover;
+  background-position: top;
+}
+.projInfo:hover {
+  background-color: var(--clr-grey-3);
+
+  background-size: cover;
+  background-position: center;
+}
 
 @media screen and (min-width: 792px) {
-  .card {
+  .card,
+  .projInfo {
     margin: 0.5rem;
   }
   .project-body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     row-gap: 1rem;
     grid-template-areas:
-      "a a b"
-      "e d d"
-      "e f g";
+      "a b"
+      "d e";
   }
   .project1 {
     grid-area: a;
@@ -99,16 +178,25 @@ h3 {
   .project4 {
     grid-area: e;
   }
-  .project5 {
+  /* .project5 {
     grid-area: f;
   }
   .project6 {
     grid-area: g;
-  }
+  } */
 }
 @media screen and (min-width: 992px) {
   .card {
     margin: 1rem;
-    min-height: 300px;
+    min-height: 380px;
   }
+  .projInfo {
+    min-height: 380px;
+    max-height: 380px;
+  }
+}
+
+.proj-info-1 {
+  max-height: 100px;
+  overflow: scroll;
 }

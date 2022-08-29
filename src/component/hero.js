@@ -6,6 +6,7 @@ import { BsGithub, BsLinkedin, BsFacebook } from "react-icons/bs";
 
 import "./../App.css";
 import "./hero.css";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Hero() {
   return (
@@ -15,13 +16,13 @@ function Hero() {
           <div className="hero-info">
             <div className="hero-icons">
               <span>
-                <a href="#">
+                <a href="https://github.com/chamithg">
                   <BsGithub />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/chamith-gamage-6aa1a1213">
                   <BsLinkedin />
                 </a>
-                <a href="#">
+                <a href="https://facebook.com/chamith.harshana">
                   <BsFacebook />
                 </a>
                 <a href="https://app.netlify.com/teams/chamithg/overview">
@@ -52,11 +53,19 @@ function Hero() {
                 <span># </span> MERN{" "}
               </h3>
               <h3>
-                <span># </span> python
+                <span># </span> Python / Flask
+              </h3>
+              <h3>
+                <span># </span> Java / Spring Boot
               </h3>
               <div className="hero-btn-container">
-                <button className="btn hero-btn">Hire Me!</button>
-                <button className="btn hero-btn">Resume</button>
+                <AnchorLink href="#contact">
+                  <button className="btn hero-btn">Hire Me!</button>
+                </AnchorLink>
+
+                <a href="https://docs.google.com/document/d/1xQI95qJ41pudTeU4tWRMWi_Hv0LLHcKDHh-X4fTIPHc/edit?usp=sharing">
+                  <button className="btn hero-btn">Resume</button>
+                </a>
               </div>
             </div>
           </div>
