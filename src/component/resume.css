@@ -165,4 +165,9 @@
     align-items: center;
     overflow: hidden;
   }
+  .resume-tabs {
+    gap: 0.1rem;
+    justify-content: center;
+    align-items: center;
+  }
 }
