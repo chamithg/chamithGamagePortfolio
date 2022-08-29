@@ -75,15 +75,10 @@ div::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
 
-.proj-info {
-  max-height: 150px;
-  overflow: scroll;
-  scrollbar-width: none;
-}
-
 .projInfo {
   background-color: var(--clr-grey-9);
   min-height: 250px;
+  max-height: 100;
   border-radius: 10px;
   margin-bottom: 2rem;
   transition: var(--transition);
@@ -196,14 +191,46 @@ div::-webkit-scrollbar {
   }
 }
 
-.proj-info-1 {
-  max-height: 100px;
-  overflow: scroll;
-}
-
 @media screen and (max-width: 500px) {
   .project-body {
     width: 90vw;
     margin: 2rem;
   }
+  .proj-info-1 {
+    max-height: 100px;
+    overflow: scroll;
+    display: hidden;
+  }
+}
+
+.proj-data {
+  display: hidden;
+}
+
+.data {
+  display: none;
+}
+
+.data-show {
+  background-color: var(--clr-grey-1);
+  width: 90vw;
+  margin: 5vw;
+  height: fit-content;
+  position: fixed;
+  top: 5rem;
+  bottom: 10rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: var(--transition);
+  display: block;
+}
+
+.data-show li {
+  font-size: 1.5rem;
+}
+.close-btn {
+  transition: var(--transition);
+}
+.close-btn:hover {
+  color: red;
 }

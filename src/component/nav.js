@@ -15,7 +15,7 @@ function Nav() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 70) {
+      if (window.scrollY > 70 && window.innerWidth > 1200) {
         setShowNavToggle(true);
       } else {
         setShowNavToggle(false);
