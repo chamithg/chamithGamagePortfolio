@@ -200,3 +200,10 @@ div::-webkit-scrollbar {
   max-height: 100px;
   overflow: scroll;
 }
+
+@media screen and (max-width: 500px) {
+  .project-body {
+    width: 90vw;
+    margin: 2rem;
+  }
+}
