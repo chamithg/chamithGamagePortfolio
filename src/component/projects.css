@@ -26,6 +26,7 @@
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --white-shadow: 0 5px 15px rgb(246, 239, 239);
 }
 
 a {
@@ -63,7 +64,6 @@ h3 {
   padding-bottom: 2rem;
 }
 .card {
-  background-color: var(--clr-grey-9);
   min-height: 250px;
   border-radius: 10px;
   margin-bottom: 2rem;
@@ -76,19 +76,15 @@ div::-webkit-scrollbar {
 }
 
 .projInfo {
-  background-color: var(--clr-grey-9);
   min-height: 250px;
   max-height: 100;
   border-radius: 10px;
   margin-bottom: 2rem;
   transition: var(--transition);
 }
-.card:hover {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-}
 
 .projInfo {
+  text-shadow: var(--light-shadow);
   padding: 1.5rem;
   opacity: 0;
 }
@@ -106,10 +102,17 @@ div::-webkit-scrollbar {
 }
 
 .projInfo h3 {
+  color: var(--clr-grey-1);
   font-size: 1.8rem;
 }
 
+.projInfo p {
+  color: var(--clr-grey-1);
+}
+
 .projInfo:hover {
+  -webkit-backdrop-filter: blur(200px);
+  backdrop-filter: blur(200px);
   opacity: 100%;
 }
 .card:hover {
@@ -138,9 +141,13 @@ div::-webkit-scrollbar {
   background-size: cover;
   background-position: top;
 }
-.projInfo:hover {
-  background-color: var(--clr-grey-3);
 
+.project5 {
+  background: url(./../assets/project5.png);
+  background-size: cover;
+  background-position: top;
+}
+.projInfo:hover {
   background-size: cover;
   background-position: center;
 }
@@ -212,21 +219,26 @@ div::-webkit-scrollbar {
 }
 
 .data-show {
-  background-color: var(--clr-grey-1);
   width: 90vw;
-  margin: 5vw;
   height: 80vh;
   overflow: scroll;
   position: fixed;
-  top: 5rem;
-  bottom: 10rem;
+  color: var(--clr-grey-5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 2rem;
   border-radius: 1rem;
   transition: var(--transition);
   display: block;
+  z-index: 50;
+  -webkit-backdrop-filter: blur(500px);
+  backdrop-filter: blur(500px);
+  box-shadow: 0 5px 15px rgba(242, 242, 242, 0.1);
 }
 
 .data-show li {
+  color: var(--clr-grey-1);
   font-size: 1.5rem;
 }
 .close-btn {

@@ -8,6 +8,7 @@ function Projects() {
   const [porj2More, setProj2More] = useState(false);
   const [porj3More, setProj3More] = useState(false);
   const [porj4More, setProj4More] = useState(false);
+  const [porj5More, setProj5More] = useState(false);
   return (
     <div className="project" id="projects">
       <div className="section-center ">
@@ -65,7 +66,7 @@ function Projects() {
                   <a href="https://github.com/chamithg/weather-snap.git">
                     Github
                   </a>{" "}
-                  | <a>Demo(TBA) </a>
+                  | <a href="https://youtu.be/tFSE5MLtXKM">Demo </a>
                 </h4>
               </div>
             </div>
@@ -85,7 +86,7 @@ function Projects() {
                   <a href="https://github.com/chamithg/luckyMartInventory.git">
                     Github
                   </a>{" "}
-                  | <a>Demo(TBA)</a>
+                  | <a href="https://youtu.be/oTFyaZ25aEo">Demo</a>
                 </h4>
               </div>
             </div>
@@ -105,6 +106,26 @@ function Projects() {
                     Github
                   </a>{" "}
                   | <a>Live site(TBA)</a>
+                </h4>
+              </div>
+            </div>
+            <div className="card project5">
+              <div className="projInfo proj5">
+                <h3> ➤ Dress Men Up! </h3>
+                <p>
+                  An Clothing store E-Commerce website built with React, Node
+                  js, Express and MongoDB
+                </p>
+                <button className="btn" onClick={() => setProj5More(true)}>
+                  Read more....
+                </button>
+                <br />
+                <h4>
+                  <a href="https://github.com/chamithg/dressMenUp-Client.git">
+                    Github
+                  </a>{" "}
+                  |{" "}
+                  <a href="https://www.youtube.com/watch?v=pTzVoWafSDg">Demo</a>
                 </h4>
               </div>
             </div>
@@ -202,6 +223,32 @@ function Projects() {
           <li>
             Designed and developed the front end with JavaScript, HTML5, CSS as
             well as Bootstrap to test out different styling methods.
+          </li>
+        </ul>
+      </div>
+
+      <div className={porj5More ? "data-show" : "data"}>
+        <h3 className="close-btn" onClick={() => setProj5More(false)}>
+          <FaWindowClose />
+        </h3>
+
+        <ul>
+          <li>
+            Leverage React / Context to create websites with a coherent global
+            state to provide optimal user experience.
+          </li>
+          <li>
+            Node js + Express has been used to build the server to maintain
+            smooth connection with the database.
+          </li>
+          <li>
+            Integrated MongoDB as the database with the support of Mongoose to
+            manage relationships between data ( cart function / customer product
+            reviews) and perform schema validation.
+          </li>
+          <li>
+            Used Json Web Token to support Login / Register features as well as
+            session validations.
           </li>
         </ul>
       </div>
