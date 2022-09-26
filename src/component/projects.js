@@ -98,7 +98,7 @@ function Projects() {
                   HTML5, CSS, Java/Spring Boot and MySQL
                 </p>
                 <button className="btn" onClick={() => setProj4More(true)}>
-                  Read more....
+                  Read more...
                 </button>
                 <br />
                 <h4>
