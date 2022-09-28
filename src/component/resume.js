@@ -108,7 +108,7 @@ function Resume() {
                 <h4>
                   <span> ➣ </span>Store Associate
                 </h4>
-                <p>Lucky California | Redwood City, CA | Jun 2020-Current</p>
+                <p>Lucky California | Foster City, CA | Jun 2020-Current</p>
                 <br />
                 <h4>
                   <span> ➣ </span>Credit Officer / Customer service
