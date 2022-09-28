@@ -9,7 +9,7 @@ import "./../App.css";
 import "./resume.css";
 
 function Resume() {
-  const [selection, setSelection] = useState();
+  const [selection, setSelection] = useState("edu");
   const [translate, setTranslate] = useState(0);
   useEffect(() => {
     if (selection == "edu") {
